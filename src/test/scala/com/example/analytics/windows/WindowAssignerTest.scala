@@ -1,11 +1,11 @@
-package com.permutive.analytics.windows
+package com.example.analytics.windows
 
 import java.time.temporal.ChronoUnit
 import java.time.{Duration, Instant, LocalDateTime, ZoneOffset}
 import java.util.UUID
 
-import com.permutive.analytics.model.{EventSummary, VisitCreate, VisitUpdate}
-import com.permutive.analytics.windows.WindowAssigner.{SessionWindow, SessionWindows, TimeWindow, TumblingHourWindows}
+import com.example.analytics.model.{EventSummary, VisitCreate, VisitUpdate}
+import com.example.analytics.windows.WindowAssigner.{SessionWindow, SessionWindows, TimeWindow, TumblingHourWindows}
 import org.scalatest.{FunSpec, Matchers}
 
 /**

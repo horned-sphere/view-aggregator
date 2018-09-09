@@ -1,4 +1,4 @@
-package com.permutive.analytics.exceptions
+package com.example.analytics.exceptions
 
 /**
   * Exception thrown when a corrupt Json record is encountered.

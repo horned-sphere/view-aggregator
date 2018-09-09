@@ -1,13 +1,13 @@
-package com.permutive.analytics.components
+package com.example.analytics.components
 
 import java.time.Duration
 
 import akka.NotUsed
 import akka.stream.scaladsl.Flow
-import com.permutive.analytics.aggregation.{Aggregations, Filters}
-import com.permutive.analytics.model.{DocumentAggregate, EventSummary, VisitEvent}
-import com.permutive.analytics.windows.WindowAssigner.{SessionWindows, TumblingHourWindows}
-import com.permutive.analytics.windows.{SessionStore, WindowEvents}
+import com.example.analytics.aggregation.{Aggregations, Filters}
+import com.example.analytics.model.{DocumentAggregate, EventSummary, VisitEvent}
+import com.example.analytics.windows.WindowAssigner.{SessionWindows, TumblingHourWindows}
+import com.example.analytics.windows.{SessionStore, WindowEvents}
 
 /**
   * Modular components of the data flow.
@@ -22,8 +22,9 @@ class Flows(sessionExpiry : Duration, watermarkLag : Duration,
             maxDocumentsPerWindow : Int) {
 
   /**
-    * A flow that summarises [[VisitEvent]]s by combining the last [[com.permutive.analytics.model.VisitUpdate]]
-    * in a session with the corresponding [[com.permutive.analytics.model.VisitCreate]].
+    * A flow that summarises [[VisitEvent]]s by combining the last [[com.example.analytics.model.VisitUpdate]]
+    * in a session with the corresponding [[com.example.analytics.model.VisitCreate]].
+ *
     * @param in The flow of events.
     * @tparam T The type of the original inputs.
     * @return The summarized flow.
@@ -38,8 +39,9 @@ class Flows(sessionExpiry : Duration, watermarkLag : Duration,
   }
 
   /**
-    * A flow that summarises [[VisitEvent]]s by combining the last [[com.permutive.analytics.model.VisitUpdate]]
-    * in a session with the corresponding [[com.permutive.analytics.model.VisitCreate]].
+    * A flow that summarises [[VisitEvent]]s by combining the last [[com.example.analytics.model.VisitUpdate]]
+    * in a session with the corresponding [[com.example.analytics.model.VisitCreate]].
+ *
     * @param in The flow of events.
     * @tparam T The type of the original inputs.
     * @return The summarized flow.
@@ -63,7 +65,7 @@ class Flows(sessionExpiry : Duration, watermarkLag : Duration,
     * @return The flow of aggregates.
     */
   def createAggregateFlow[T](in : Flow[T, EventSummary, NotUsed]): Flow[T, DocumentAggregate, NotUsed] = {
-    import com.permutive.analytics.windows.WindowAssigner.TimeWindow._
+    import com.example.analytics.windows.WindowAssigner.TimeWindow._
     in.statefulMapConcat(WindowEvents(TumblingHourWindows, watermarkLag))
       .groupBy(maxTimeWindows, _.window)
       .takeWhile(event => !event.isClose)

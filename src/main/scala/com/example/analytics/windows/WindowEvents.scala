@@ -1,8 +1,8 @@
-package com.permutive.analytics.windows
+package com.example.analytics.windows
 
 import java.time.{Duration, Instant}
 
-import com.permutive.analytics.model.Timestamped
+import com.example.analytics.model.Timestamped
 import com.typesafe.scalalogging.LazyLogging
 
 /**

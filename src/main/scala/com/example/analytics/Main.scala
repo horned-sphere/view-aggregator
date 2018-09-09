@@ -1,4 +1,4 @@
-package com.permutive.analytics
+package com.example.analytics
 
 import java.io.File
 import java.time.Duration
@@ -9,8 +9,8 @@ import akka.event.Logging
 import akka.stream.scaladsl.{FileIO, Flow, Framing, Keep, Sink, Source}
 import akka.stream.{ActorMaterializer, Attributes}
 import akka.util.ByteString
-import com.permutive.analytics.components.{Connectors, Flows}
-import com.permutive.analytics.model.{Flush, VisitEvent}
+import com.example.analytics.components.{Connectors, Flows}
+import com.example.analytics.model.{Flush, VisitEvent}
 import scopt.OptionParser
 
 import scala.concurrent.{ExecutionContextExecutor, Future}

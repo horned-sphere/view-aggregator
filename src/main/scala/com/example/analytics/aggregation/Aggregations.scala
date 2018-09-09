@@ -1,10 +1,10 @@
-package com.permutive.analytics.aggregation
+package com.example.analytics.aggregation
 
 import java.util.UUID
 
-import com.permutive.analytics.model._
-import com.permutive.analytics.windows.WindowAssigner.{SessionWindow, TimeWindow}
-import com.permutive.analytics.windows.{CloseWindow, OpenWindow, WindowContrib, WindowEvent}
+import com.example.analytics.model._
+import com.example.analytics.windows.WindowAssigner.{SessionWindow, TimeWindow}
+import com.example.analytics.windows.{CloseWindow, OpenWindow, WindowContrib, WindowEvent}
 
 /**
   * Aggregation operations on the stream of events.

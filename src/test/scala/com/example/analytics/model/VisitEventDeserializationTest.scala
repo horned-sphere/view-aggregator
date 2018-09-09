@@ -1,4 +1,4 @@
-package com.permutive.analytics.model
+package com.example.analytics.model
 
 import java.time.Instant
 import java.util.UUID

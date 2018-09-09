@@ -1,10 +1,10 @@
-package com.permutive.analytics.model
+package com.example.analytics.model
 
 import java.time.Instant
 import java.util.UUID
 
-import com.permutive.analytics.windows.WindowAssigner.SessionWindow
-import com.permutive.analytics.windows.{WindowContrib, WindowEvent}
+import com.example.analytics.windows.WindowAssigner.SessionWindow
+import com.example.analytics.windows.{WindowContrib, WindowEvent}
 
 /**
   * A summary for a session of [[VisitEvent]]s with the same id. This combines information

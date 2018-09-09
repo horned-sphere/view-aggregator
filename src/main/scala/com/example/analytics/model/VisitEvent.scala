@@ -1,10 +1,10 @@
-package com.permutive.analytics.model
+package com.example.analytics.model
 
 import java.time.Instant
 import java.time.format.DateTimeFormatter
 import java.util.UUID
 
-import com.permutive.analytics.exceptions.CorruptRecordException
+import com.example.analytics.exceptions.CorruptRecordException
 import spray.json.{DefaultJsonProtocol, JsObject, JsString, JsValue, JsonFormat, RootJsonFormat}
 
 import scala.util.{Failure, Success, Try}

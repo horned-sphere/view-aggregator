@@ -1,6 +1,6 @@
-package com.permutive.analytics.aggregation
+package com.example.analytics.aggregation
 
-import com.permutive.analytics.windows.{Window, WindowContrib, WindowEvent}
+import com.example.analytics.windows.{Window, WindowContrib, WindowEvent}
 
 object Filters {
 

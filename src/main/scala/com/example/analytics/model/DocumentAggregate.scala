@@ -1,4 +1,4 @@
-package com.permutive.analytics.model
+package com.example.analytics.model
 
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter

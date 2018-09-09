@@ -1,4 +1,4 @@
-package com.permutive.analytics.components
+package com.example.analytics.components
 
 import java.time.temporal.ChronoUnit
 import java.time.{Duration, Instant, LocalDateTime, ZoneOffset}
@@ -8,7 +8,7 @@ import akka.actor.ActorSystem
 import akka.stream.ActorMaterializer
 import akka.stream.scaladsl.{Flow, Sink, Source}
 import akka.testkit.TestKit
-import com.permutive.analytics.model._
+import com.example.analytics.model._
 import org.scalatest._
 
 import scala.collection.immutable

@@ -1,4 +1,4 @@
-package com.permutive.analytics.components
+package com.example.analytics.components
 
 import akka.stream.scaladsl.{Flow, GraphDSL, Partition, RunnableGraph, Sink, Source}
 import akka.stream.{ClosedShape, Materializer}

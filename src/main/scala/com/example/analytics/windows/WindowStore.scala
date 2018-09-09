@@ -1,9 +1,9 @@
-package com.permutive.analytics.windows
+package com.example.analytics.windows
 
 import java.util.UUID
 
-import com.permutive.analytics.model.VisitEvent
-import com.permutive.analytics.windows.WindowAssigner.SessionWindow
+import com.example.analytics.model.VisitEvent
+import com.example.analytics.windows.WindowAssigner.SessionWindow
 
 import scala.collection.{SortedSet, mutable}
 

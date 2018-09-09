@@ -1,9 +1,9 @@
-package com.permutive.analytics.windows
+package com.example.analytics.windows
 
 import java.time.temporal.ChronoUnit
 import java.time.{Duration, Instant, LocalDateTime, ZoneOffset}
 
-import com.permutive.analytics.model._
+import com.example.analytics.model._
 
 /**
   * A window over which data can be aggregated.

@@ -1,4 +1,4 @@
-package com.permutive.analytics.windows
+package com.example.analytics.windows
 
 /**
   * An event in a windowed stream.

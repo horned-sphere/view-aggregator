@@ -1,7 +1,7 @@
-package com.permutive.analytics.windows
+package com.example.analytics.windows
 
 import java.time.Instant
 
-import com.permutive.analytics.model.Timestamped
+import com.example.analytics.model.Timestamped
 
 case class TimeRecord(timestamp : Instant, n : Int = 0) extends Timestamped

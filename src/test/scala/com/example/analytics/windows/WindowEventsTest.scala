@@ -1,4 +1,4 @@
-package com.permutive.analytics.windows
+package com.example.analytics.windows
 
 import java.time.{Duration, Instant}
 import java.time.temporal.ChronoUnit
