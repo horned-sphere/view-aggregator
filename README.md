@@ -21,7 +21,7 @@ Currently the aggregates are written to the console but any Akka streams sink wo
 
 The example application is:
 
-```com.permutive.analytics.Main```
+```com.example.analytics.Main```
 
 Using sbt it can be run with:
 
